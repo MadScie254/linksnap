@@ -1,0 +1,21 @@
+/* app/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#0a0a0a] text-white;
+    font-family: 'DM Sans', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .input {
+    @apply w-full bg-white/10 border border-white/15 rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-emerald-500/60 transition-colors;
+  }
+
+  .btn-primary {
+    @apply bg-emerald-500 hover:bg-emerald-400 disabled:opacity-50 text-black font-bold px-4 py-3 rounded-xl transition-colors text-sm;
+  }
+}
