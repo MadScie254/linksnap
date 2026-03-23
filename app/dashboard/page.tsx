@@ -74,6 +74,12 @@ export default function DashboardPage() {
           Link<span className="text-emerald-400">Snap</span>
         </span>
         <div className="flex items-center gap-4">
+          <Link href="/dashboard" className="text-sm text-white/50 hover:text-white transition-colors">
+            🔗 Links
+          </Link>
+          <Link href="/dashboard/profile" className="text-sm text-white/50 hover:text-white transition-colors">
+            👤 Profile
+          </Link>
           <Link href="/dashboard/analytics" className="text-sm text-white/50 hover:text-white transition-colors">
             📊 Analytics
           </Link>
